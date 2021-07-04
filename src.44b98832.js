@@ -3,6 +3,6 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"yCUT":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.CountdownTimer=void 0;class t{constructor(t,e){this.selector=t,this.targetDate=e}getRef(){this.refs={daysEl:document.querySelector(`${this.selector} [data-value="days"]`),hoursEl:document.querySelector(`${this.selector} [data-value="hours"]`),minsEl:document.querySelector(`${this.selector} [data-value="mins"]`),secsEl:document.querySelector(`${this.selector} [data-value="secs"]`)}}start(){this.getRef(),setInterval(()=>{const t=Date.now(),e=this.targetDate-t,{days:s,hours:o,mins:r,secs:a}=this.getTimeComponents(e);this.refs.daysEl.textContent=s,this.refs.hoursEl.textContent=o,this.refs.minsEl.textContent=r,this.refs.secsEl.textContent=a},1e3)}pad(t){return String(t).padStart(2,"0")}getTimeComponents(t){return{days:this.pad(Math.floor(t/864e5)),hours:this.pad(Math.floor(t%864e5/36e5)),mins:this.pad(Math.floor(t%36e5/6e4)),secs:this.pad(Math.floor(t%6e4/1e3))}}}exports.CountdownTimer=t;
 },{}],"Focm":[function(require,module,exports) {
-"use strict";require("./sass/main.scss");var e=require("./js/timer");const s=new e.CountdownTimer("#timer-1",new Date("Jul 17, 2021"));s.start();
+"use strict";require("./sass/main.scss");var e=require("./js/timer");const s=new e.CountdownTimer("#timer-1",new Date("Jul 17, 2022"));s.start();
 },{"./sass/main.scss":"clu1","./js/timer":"yCUT"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw-11-timer/src.09728b11.js.map
+//# sourceMappingURL=/goit-js-hw-11-timer/src.44b98832.js.map
