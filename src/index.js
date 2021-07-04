@@ -1,5 +1,5 @@
 import './sass/main.scss';
 import { CountdownTimer } from './js/timer';
 
-const timer = new CountdownTimer('#timer-1', new Date('Jul 17, 2021'));
+const timer = new CountdownTimer('#timer-1', new Date('Jul 17, 2022'));
 timer.start();
